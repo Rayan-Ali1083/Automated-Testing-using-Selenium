@@ -1,12 +1,11 @@
 # Automated-Testing-using-Selenium
 
-This Repository contains a sorting algorithm visualizer and a python file (se.ipynb).
+This Repository contains a sorting algorithm visualizer and two python files (defect.py and validation.py).
 
 1) Sorting algorithm visualizer takes txt file and sorts it.
-2) Format of txt file should be as following: "1, 2, 4, 7, 8, 9, 5"
-3) In se.ipynb file you have 2 asserts: 
-  *) 1 checks correct data type
-  *) 2 checks correct sorting
-4) For testing correct and incorrect data type use input.txt and inputw.txt respectively
-5) For testing correct and incorrect sorting use ins-btn and bub-btn respectively
-6) MAKE SURE TO LEAVE A LIKE ♥♥♥
+2) Format of txt file should be as following: "1, 2, 4, 7, 8, 9, 5".
+3) There are 2 different files for 2 different automated tests (defect testing and validation testing): 
+  *) 1 In defect testing, it prompts an error if the input file type consists of the wrong data to be sorted.
+  *) 2 In validation testing, it ensures if the data entered through file has been sorted successfully or not.
+4) For testing correct and incorrect data type use input.txt and inputw.txt respectively.
+6) MAKE SURE TO LEAVE A STAR.
