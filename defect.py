@@ -16,7 +16,7 @@ driver.get(r'https://rayan-ali1083.github.io/Automated-Testing-using-Selenium/')
 
 file_input = driver.find_element('id',"formFile")
 
-file_input.send_keys(r"C:\\Users\Dell 9010\Desktop\Automated-Testing-using-Selenium\\inputw.txt")          # check with input.txt and inputw.txt
+file_input.send_keys(r"/Users/faheem/Desktop/FAST NUCES/SE/Assignment 2/Automated-Testing-using-Selenium/input-wrong.txt")          # check with input.txt and inputw.txt
 
 
 submitButton = driver.find_element('xpath',"//button[@id='ins-btn']")                                  # check with ins-btn and bub-btn
@@ -24,7 +24,7 @@ submitButton.send_keys("\n")
 
 import ast
 
-f = open("inputw.txt", "r")                                                                              # check with input.txt and inputw.txt
+f = open("input-wrong.txt", "r")                                                                              # check with input.txt and inputw.txt
                                              
 ls = ast.literal_eval(f.readline())
 arr = driver.execute_script('return data')
@@ -36,14 +36,6 @@ for ch in ls:
         check = True
         break
 
-assert check != True, 'Character present in the list, Defect Testing'
-
-ls = [int(val) for val in ls]
-ls = sorted(ls)
-arr = [int(val) for val in arr]
-
-
-assert ls == arr, "Not Equal, Defect Testing"
-print('Validated')
-
+assert check != True, 'Wrong input given to the program. This type of data cannot be sorted. TEST FAILED'
+print("DEFECT TEST PASSED")
 driver.quit()
