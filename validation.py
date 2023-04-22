@@ -15,11 +15,11 @@ def validationTest():
     dc['loggingPrefs'] = { 'browser':'ALL' }
 
     driver = webdriver.Chrome(options=options, service=service, desired_capabilities=dc)
-    driver.get(r'file:///Users/faheem/Desktop/FAST%20NUCES/SE/Assignment%202/Automated-Testing-using-Selenium/index.html')
+    driver.get(r'https://rayan-ali1083.github.io/Automated-Testing-using-Selenium/')
 
     file_input = driver.find_element('id',"formFile")
 
-    file_input.send_keys(r"/Users/faheem/Desktop/FAST NUCES/SE/Assignment 2/Automated-Testing-using-Selenium/input.txt")          # check with input.txt and inputw.txt
+    file_input.send_keys(r"input.txt")                                                                      # check with input.txt and input-wrong.txt                                                     # check with input.txt and inputw.txt
 
 
     submitButton = driver.find_element('xpath',"//button[@id='ins-btn']")                                  # check with ins-btn and bub-btn
