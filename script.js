@@ -74,7 +74,7 @@ function barChart(data) {
   barchart.appendChild(barrow);
   barchart.appendChild(legendrow);
   chart.appendChild(barchart);
-  for (var i = 0; i < 12; i++)
+  for (var i = 0; i < 1; i++)
     document.getElementsByClassName("chart")[i].innerHTML = chart.outerHTML;
 }
 var countChart = 0;
