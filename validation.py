@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 import ast
+import time
 
 def validationTest():
     options = Options()
@@ -14,7 +15,7 @@ def validationTest():
     dc['loggingPrefs'] = { 'browser':'ALL' }
 
     driver = webdriver.Chrome(options=options, service=service, desired_capabilities=dc)
-    driver.get(r'https://rayan-ali1083.github.io/Automated-Testing-using-Selenium/')
+    driver.get(r'file:///Users/faheem/Desktop/FAST%20NUCES/SE/Assignment%202/Automated-Testing-using-Selenium/index.html')
 
     file_input = driver.find_element('id',"formFile")
 
@@ -23,7 +24,7 @@ def validationTest():
 
     submitButton = driver.find_element('xpath',"//button[@id='ins-btn']")                                  # check with ins-btn and bub-btn
     submitButton.send_keys("\n")
-
+    
     f = open("input.txt", "r")                                                                              # check with input.txt and inputw.txt
                                                 
     ls = ast.literal_eval(f.readline())
@@ -32,7 +33,7 @@ def validationTest():
     ls = [int(val) for val in ls]
     ls = sorted(ls)
     arr = [int(val) for val in arr]
-
+    time.sleep(45)
 
     assert ls == arr, "Data not sorted. TEST FAILED"
     print("VALIDATION TEST PASSED")
