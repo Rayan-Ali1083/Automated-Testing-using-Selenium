@@ -8,4 +8,4 @@ This Repository contains a sorting algorithm visualizer and two python files (de
   *) 1 In defect testing, it prompts an error if the input file type consists of the wrong data to be sorted.
   *) 2 In validation testing, it ensures if the data entered through file has been sorted successfully or not.
 4) For testing correct and incorrect data type use input.txt and inputw.txt respectively.
-6) MAKE SURE TO LEAVE A STAR.
+6) MAKE SURE TO LEAVE A STAR ⭐️.
